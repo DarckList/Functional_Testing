@@ -1,0 +1,102 @@
+{
+  "id": "235ab8de-c99e-45e0-9726-def3adb98cf2",
+  "version": "2.0",
+  "name": "lab3",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "d45173fb-b95b-4328-8b4f-32dba83c6042",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "415fd324-de0f-4705-b134-6f1a66d01d0d",
+    "name": "T-SHIRTS",
+    "commands": [{
+      "id": "fdb7dd56-38cc-4ce1-b6d0-23e1bee0571c",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f2031aa-4db1-4ed4-8891-d1d84532a8fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d5ff2c0-76e4-4de4-95e6-569e66246aef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > a",
+      "targets": [
+        ["css=.sfHover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'T-shirts')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=5&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "964eb1c8-6648-4c10-a796-6ef4169fc53c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_img_link > .replace-2x",
+      "targets": [
+        ["css=.product_img_link > .replace-2x", "css:finder"],
+        ["xpath=//img[@alt='Faded Short Sleeve T-shirts']", "xpath:img"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9dd4740-1498-45c3-9b38-9d9cf1ba43a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8e21e34-7e31-4fd2-82f4-eb08df6c50d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-medium > span",
+      "targets": [
+        ["css=.button-medium > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Proceed to checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe37dddf-6bbf-4fe1-9e35-e3a98f293c73",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Faded Short Sleeve T-shirts",
+      "targets": [
+        ["linkText=Faded Short Sleeve T-shirts", "linkText"],
+        ["css=.cart_description > .product-name > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Faded Short Sleeve T-shirts')])[2]", "xpath:link"],
+        ["xpath=//tr[@id='product_1_1_0_166007']/td[2]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_product=1&controller=product#/size-s/color-orange'])[6]", "xpath:href"],
+        ["xpath=//td[2]/p/a", "xpath:position"]
+      ],
+      "value": "Faded Short Sleeve T-shirts"
+    }]
+  }],
+  "suites": [{
+    "id": "d52eb09e-dc71-49aa-a3f1-61876dacb2ff",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d45173fb-b95b-4328-8b4f-32dba83c6042"]
+  }],
+  "urls": ["http://automationpractice.com/index.php"],
+  "plugins": []
+}
